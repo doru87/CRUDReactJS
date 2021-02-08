@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0bd7411664bb6ea639066852d16e987e",
+    "revision": "12779600df772eed4a3583eb9dc5d2d6",
     "url": "/CRUDReactJS/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CRUDReactJS/static/css/2.829c9cb5.chunk.css"
   },
   {
-    "revision": "092a39312c41aa3aecfd",
+    "revision": "8938f22eeb4de3e814cd",
     "url": "/CRUDReactJS/static/css/main.558fc198.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CRUDReactJS/static/js/2.f862b848.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "092a39312c41aa3aecfd",
-    "url": "/CRUDReactJS/static/js/main.2cab5c4c.chunk.js"
+    "revision": "8938f22eeb4de3e814cd",
+    "url": "/CRUDReactJS/static/js/main.838856a8.chunk.js"
   },
   {
     "revision": "77f9c4974167361d843f",

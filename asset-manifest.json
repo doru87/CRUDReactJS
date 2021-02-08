@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CRUDReactJS/static/css/main.558fc198.chunk.css",
-    "main.js": "/CRUDReactJS/static/js/main.2cab5c4c.chunk.js",
-    "main.js.map": "/CRUDReactJS/static/js/main.2cab5c4c.chunk.js.map",
+    "main.js": "/CRUDReactJS/static/js/main.838856a8.chunk.js",
+    "main.js.map": "/CRUDReactJS/static/js/main.838856a8.chunk.js.map",
     "runtime-main.js": "/CRUDReactJS/static/js/runtime-main.79494e46.js",
     "runtime-main.js.map": "/CRUDReactJS/static/js/runtime-main.79494e46.js.map",
     "static/css/2.829c9cb5.chunk.css": "/CRUDReactJS/static/css/2.829c9cb5.chunk.css",
     "static/js/2.f862b848.chunk.js": "/CRUDReactJS/static/js/2.f862b848.chunk.js",
     "static/js/2.f862b848.chunk.js.map": "/CRUDReactJS/static/js/2.f862b848.chunk.js.map",
     "index.html": "/CRUDReactJS/index.html",
-    "precache-manifest.25367b39c4bdc5df693a57f28dbe0647.js": "/CRUDReactJS/precache-manifest.25367b39c4bdc5df693a57f28dbe0647.js",
+    "precache-manifest.423fdc08a613c31709d07b0f5b759a47.js": "/CRUDReactJS/precache-manifest.423fdc08a613c31709d07b0f5b759a47.js",
     "service-worker.js": "/CRUDReactJS/service-worker.js",
     "static/css/2.829c9cb5.chunk.css.map": "/CRUDReactJS/static/css/2.829c9cb5.chunk.css.map",
     "static/css/main.558fc198.chunk.css.map": "/CRUDReactJS/static/css/main.558fc198.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.829c9cb5.chunk.css",
     "static/js/2.f862b848.chunk.js",
     "static/css/main.558fc198.chunk.css",
-    "static/js/main.2cab5c4c.chunk.js"
+    "static/js/main.838856a8.chunk.js"
   ]
 }
