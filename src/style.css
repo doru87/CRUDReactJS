@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #e1ecf2;
+}
+
+.wrapper{
+  margin: 10px;
+}
+
+.wrapper .top_navbar{
+  width: calc(100% - 20px);
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 10px;
+}
+
+.wrapper .top_navbar .top_menu{
+  width: calc(100% - 70px);
+  height: 100%;
+  background: #fff;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.wrapper .top_navbar .top_menu ul{
+  display: flex;
+}
+
+.wrapper .top_navbar .top_menu ul li a{
+  display: block;
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #2e4ead;
+  border-radius: 50%;
+  color: #2e4ead;
+}
+
+.wrapper .top_navbar .top_menu ul li .blue{
+  background: #4360b5;
+  color: #fff;
+}
+.wrapper .top_navbar .top_menu ul li  #activeblue{
+  background: #4360b5;
+  color: #fff;
+}
+
+.wrapper .top_navbar .top_menu ul li .red{
+  background: #cf1212;
+  color: #fff;
+}
+.wrapper .top_navbar .top_menu ul li  #activered{
+  background: #cf1212;
+  color: #fff;
+}
+.wrapper .top_navbar .top_menu ul li .green{
+  background: #199109;
+  color: #fff;
+}
+.wrapper .top_navbar .top_menu ul li  #activegreen{
+  background: #199109;
+  color: #fff;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover{
+  color: #fff;
+}
+
+.wrapper .top_navbar .top_menu ul li a:hover i{
+  color: #fff;
+}
+
+.wrapper .sidebar{
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  width: 200px;
+  height: calc(100% - 80px);
+  border-bottom-left-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .sidebar ul li {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  position: relative;
+  margin-bottom: 1px;
+  white-space: nowrap;
+}
+
+.wrapper .sidebar ul li a span.icon{
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a span.title{
+  display: inline-block;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+  display: block;
+}
+
+.wrapper .main_container{
+  width: (100% - 200px);
+  margin-top: 70px;
+  margin-left: 200px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.books_container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  gap: 50px;
+}
+
+.movies_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+   height:auto;
+}
+
+.sports_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  height:auto;
+}
+
+.wrapper .main_container .item{
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  height:350px;
+  position: relative;
+}
+
+.wrapper .main_container .item .title {
+  background: cornflowerblue;
+  height:50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wrapper .main_container .item-sports{
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  height:650px;
+  position: relative;
+}
+
+.wrapper .main_container .item-sports .title {
+  background: cornflowerblue;
+  height:50px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wrapper .main_container .item .picture {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wrapper .main_container .item .picture img {
+  width:200px;
+  height:250px;
+  margin-top: 20px;
+}
+
+.wrapper .main_container .item-sports .picture-sports {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.wrapper .main_container .item-sports .picture-sports img {
+  width:400px;
+  height:250px;
+  margin-top: 20px;
+}
+
+.sports-details {
+  position: relative;
+}
+
+.wrapper .main_container .item .author,.year {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left:200px;
+  position: absolute;
+  top:100px;
+}
+.wrapper .main_container .item-sports .rank {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main_container .item .author span,.year span{
+  color:black;
+  font-weight: 800;
+  margin-left:10px;
+}
+
+.wrapper .main_container .item-sports .rank span{
+  color:black;
+  font-weight: 800;
+}
+
+.wrapper .main_container .item .publisher,.genres {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:200px;
+  position: absolute;
+  top:150px;
+}
+
+.wrapper .main_container .item-sports .popularity {
+  display: flex;
+  justify-content: left;
+}
+
+.wrapper .main_container .item .publisher span,.genres span{
+  color:black;
+  font-weight: 800;
+  margin-left:10px;
+}
+
+.wrapper .main_container .item-sports .popularity span{
+  color:black;
+  font-weight: 800;
+}
+
+.wrapper .main_container .item .pages,.cast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:200px;
+  position: absolute;
+  top:200px;
+}
+
+.wrapper .main_container .item-sports .fans{
+  display: flex;
+  justify-content: left;
+}
+
+.wrapper .main_container .item .pages span,.cast span{
+  color:black;
+  font-weight: 800;
+  margin-left:10px;
+}
+
+.wrapper .main_container .item-sports .fans span{
+  color:black;
+  font-weight: 800;
+}
+
+.wrapper .main_container .item .edit,.delete {
+  margin-left: 30px;
+  color:#292f42;
+}
+
+.wrapper .main_container .item-sports .edit,.delete {
+  margin-left: 30px;
+  color:#292f42;
+}
+
+.wrapper .main_container .item .edit span {
+  color:#292f42;
+}
+
+.wrapper .main_container .item-sports .edit span {
+  color:#292f42;
+}
+
+.wrapper .main_container .item .delete span {
+  color:#292f42;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrapper .main_container .item-sports .delete span {
+  color:#292f42;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrapper .main_container .item .book-description {
+  width:70%;
+  margin-left:200px;
+  position: absolute;
+  top:250px;
+  left:70px;
+}
+
+.wrapper .main_container .item .movie-description {
+  width: 60%;
+  margin-left: 90px;
+  position: absolute;
+  top:250px;
+  left:150px;
+}
+
+.wrapper .main_container .item-sports .sport-description {
+  width: 100%;
+}
+
+.itemCard {
+  background: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 22px;
+  height:600px;
+  width:500px;
+}
+
+.wrapper.collapse .sidebar{
+  width: 70px;
+}
+
+.wrapper.collapse .sidebar ul li a{
+  text-align: center; 
+}
+
+.wrapper.collapse .sidebar ul li a span.icon{
+  margin: 0;
+}
+
+.wrapper.collapse .sidebar ul li a span.title{
+  display: none;
+}
+
+.wrapper.collapse .main_container{
+  width: (100% - 70px);
+  margin-left: 70px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.sports-accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.accordion.active:after {
+  content: "\2212";
+}
+
+.panel {
+  background-color:#4360b5;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.sports-panel {
+  background-color:#4360b5;
+  max-height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 200px;
+}
+
+.submenu {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color:#fff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.yesButton,.noButton {
+  width:50%;
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+  background-color:#768d87;
+  border-radius:5px;
+  border:1px solid #566963;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:10px 35px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+
+.yesButton:hover,.noButton:hover {
+  background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color:#6c7c7c;
+}
+
+.yesButton:active,.noButton:active {
+  position:relative;
+  top:1px;
+}
+
+.right-top {
+  position: absolute;
+  top:20px;
+  right:20px;
+}
+
+.closeButton {
+  box-shadow:inset 0px 39px 0px -24px #e67a73;
+  background-color:#e4685d;
+  border:1px solid #ffffff;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:28px;
+  padding:4px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+
+.closeButton:hover {
+  background-color:#eb675e;
+}
+
+.closeButton:active {
+  position:relative;
+  top:1px;
+}
+
+     
